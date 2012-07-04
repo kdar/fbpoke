@@ -69,7 +69,7 @@ var steps = [
             evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
 
             for (i = 0, len = targets.length; i < len; ++i) {
-              console.log("found poke. clicked");
+              console.log("Found poke from \""+ document.querySelector('.pokeHeader a').innerHTML + "\". clicked");
               targets[i].dispatchEvent(evt);
             }
           }
